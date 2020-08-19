@@ -19,7 +19,7 @@ int main(int argc, char *argv[]){
 
 
     //QApplication app(argc, argv);
-    QApplication uygulama(argc,argv);
+    QApplication uygulama(argc,argv);//şuraya düzeltme yapılmalı
 
     QMainWindow *window = new QMainWindow();
 
