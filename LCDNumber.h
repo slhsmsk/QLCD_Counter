@@ -40,7 +40,7 @@ public:
 
         this->display(zamansaat->toString(QString("mm:ss.zzz")));
 
-        QObject::connect(zamanlayici,SIGNAL(timeout()),this,SLOT(setDisplay));
+        QObject::connect(zamanlayici,SIGNAL(timeout()),this,SLOT(setDisplay()));
         QObject::connect(buton1,SIGNAL(pressed()),this,SLOT(start()));
         QObject::connect(buton2,SIGNAL(pressed()),this,SLOT(stop()));
 

@@ -31,7 +31,7 @@ int main(int argc, char *argv[]){
     QVBoxLayout *yrlsm =  new QVBoxLayout();
     centerWd->setLayout(yrlsm);
     
-      LCDNumber *sayi = new LCDNumber(yrlsm,window,1,0);
+      LCDNumber *sayi = new LCDNumber(yrlsm,window,5,0);
 
        sayi->setFixedSize(800,280);
        sayi->setDigitCount(9);
