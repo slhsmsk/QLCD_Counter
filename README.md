@@ -3,3 +3,7 @@ QT5 Counter Program
 
 QT5 Simple Counter program.
 
+Program Ekran Görüntüsü:
+
+
+
