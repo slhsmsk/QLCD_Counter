@@ -38,7 +38,7 @@ public:
         verticalLayout->addWidget(buton1);
         verticalLayout->addWidget(buton2);
 
-        this->display(zamansaat->toString(QString("mm:ss.zzz")));
+        this->display(zamansaat->toString(QString("mm:ss:zzz")));
 
         QObject::connect(zamanlayici,SIGNAL(timeout()),this,SLOT(setDisplay()));
         QObject::connect(buton1,SIGNAL(pressed()),this,SLOT(start()));
@@ -54,7 +54,7 @@ public:
                                   this->zamansaat->addMSecs(-1).second(),
                                   this->zamansaat->addMSecs(-1).msec());
 
-        this->display(this->zamansaat->toString(QString("mm::ss,zzz")));
+        this->display(this->zamansaat->toString(QString("mm:ss:zzz")));
 
 
     }
