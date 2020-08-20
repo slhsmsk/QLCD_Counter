@@ -19,7 +19,7 @@ int main(int argc, char *argv[]){
 
 
     //QApplication app(argc, argv);
-    QApplication uygulama(argc,argv);//şuraya düzeltme yapılmalı
+    QApplication uygulama(argc,argv);
 
     QMainWindow *window = new QMainWindow();
 
@@ -30,7 +30,7 @@ int main(int argc, char *argv[]){
 
     QVBoxLayout *yrlsm =  new QVBoxLayout();
     centerWd->setLayout(yrlsm);
-    
+
       LCDNumber *sayi = new LCDNumber(yrlsm,window,5,0);
 
        sayi->setFixedSize(800,280);
